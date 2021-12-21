@@ -1,9 +1,12 @@
-## Welcome to GitHub Pages
-
+Teachable Machine Image Model
+Start
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script> <script type="text/javascript"> // More API functions here: // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+// the link to your model provided by Teachable Machine export panel
 const URL = "./my_model/";
 
 let model, webcam, labelContainer, maxPredictions;
 
+// Load the image model and setup the webcam
 async function init() {
     const modelURL = URL + "model.json";
     const metadataURL = URL + "metadata.json";
@@ -46,4 +49,5 @@ async function predict() {
         labelContainer.childNodes[i].innerHTML = classPrediction;
     }
 }
-</script>
+</script> <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Agente1" agent-id="7a0fe0f2-91f6-4a62-be1e-ad6a3d25fc35" language-code="es"
